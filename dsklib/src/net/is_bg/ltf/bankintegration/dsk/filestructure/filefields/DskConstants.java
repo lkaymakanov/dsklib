@@ -1,5 +1,6 @@
 package net.is_bg.ltf.bankintegration.dsk.filestructure.filefields;
 
+import java.util.Locale;
 import java.util.ResourceBundle;
 
 
@@ -14,7 +15,7 @@ public class DskConstants {
 	
 	   /**IBAN REGULAR EXPRESSION*/
 	   public static String IBAN_REG_EX = "[\\D\\S]{2}\\d{2}[\\D\\S]{4}\\d{14}[\\D\\S]{1}";
-	   public static ResourceBundle MSG_BANKDSK = ResourceBundle.getBundle("dsk");
+	   public static ResourceBundle MSG_BANKDSK = ResourceBundle.getBundle("dsk", new Locale("bg", "BG"));
 	   
 	   public static final String ACTIVE_SERVICE_FTYPE = "ACTIVE_SERVICE";
 	   public static final String PAYMENT_FTYPE = "PAYMENT";
